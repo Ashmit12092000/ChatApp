@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.SettingActivity" android:background="#F7F9FD">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+             android:src="@drawable/account"/>
+
+    <TextView
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/stats"
+            android:layout_below="@id/name1" android:layout_centerHorizontal="true" android:layout_marginTop="30dp"
+            android:fontFamily="@font/allan" android:textSize="16sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_below="@+id/profile_picture"
+              android:id="@+id/name1"
+              android:layout_centerHorizontal="true" android:layout_marginTop="15dp"
+              android:textStyle="bold" android:textColor="#000000" android:textSize="18sp"/>
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_width="match_parent" android:layout_height="100dp"
+               android:layout_below="@+id/name1"
+               android:id="@+id/design"
+               android:layout_marginTop="80dp" android:background="@drawable/ic_hh"/>
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_width="36dp" android:layout_height="36dp"
+                                                  android:id="@+id/profil"
+                                                  android:layout_below="@+id/design"
+                                                  android:layout_marginTop="28dp"
+                                                  android:layout_marginLeft="90dp"
+                                                  android:src="@drawable/user"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="My Profile"
+              android:id="@+id/myprofiletext"
+              android:layout_toRightOf="@+id/profil"
+              android:layout_below="@+id/design"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="35dp" android:layout_marginLeft="15dp" android:textStyle="bold"
+              android:textSize="17sp"/>
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_width="32dp" android:layout_height="32dp"
+               android:id="@+id/logout_profile"
+               android:layout_below="@+id/profil"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="93dp"
+               android:src="@drawable/ic_logout"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Logout"
+              android:id="@+id/log_Text"
+              android:layout_toRightOf="@id/logout_profile"
+              android:layout_below="@+id/myprofiletext"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="31dp" android:layout_marginLeft="19dp" android:textStyle="bold"
+              android:textSize="17sp"/>
+    <TextView
+            android:text="Lets Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView11" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

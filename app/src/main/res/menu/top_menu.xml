@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      >
+
+    <item
+            android:id="@+id/app_bar_search"
+            app:actionViewClass="android.widget.SearchView" app:showAsAction="always" android:title="search"
+            android:icon="@drawable/ic_047_pin"
+            />
+    <item android:title="World chat" android:id="@+id/group"/>
+    <item android:title="Invite" android:id="@+id/invite"/>
+    <item android:id="@+id/logouts" android:title="Logout"/>
+    <item android:title="Settings" android:id="@+id/setting"/>
+</menu>

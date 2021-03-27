@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content" android:visibility="visible"
+                                                   android:id="@+id/reciever_layout">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="@drawable/reciver_mesaage_box"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/linearLayout2" android:layout_margin="5dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/name" android:padding="4dp"
+                android:background="@drawable/reciever_sen_back" android:textSize="16sp" android:textStyle="bold"
+                android:textColor="#E39B30"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:id="@+id/view4" android:background="#FFFFFF"
+                android:backgroundTint="#131313"/>
+        <ImageView
+                android:layout_width="184dp"
+                android:layout_height="184dp" app:srcCompat="@drawable/account" android:id="@+id/imageView2"
+                android:scaleType="centerCrop" android:layout_margin="5dp" android:visibility="gone"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_message"
+                android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="2dp" android:layout_marginLeft="2dp" android:layout_marginStart="2dp"
+                android:textSize="20sp" android:textColor="#0C0C0C"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="16dp"
+            app:srcCompat="@drawable/cool"
+            android:layout_height="16dp"
+            android:visibility="gone" android:id="@+id/reciever_cool_imoji"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2" app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

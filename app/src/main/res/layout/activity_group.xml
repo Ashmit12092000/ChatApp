@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.chat_activity" android:background="@drawable/bas">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_toolbar"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/gtoolbar"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" tools:layout_editor_absoluteY="3dp"
+                tools:layout_editor_absoluteX="16dp">
+
+
+            <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/back" android:id="@+id/gback"
+                    android:layout_weight="1"
+                    app:tint="#FFFFFF" android:layout_gravity="center"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent" android:src="@drawable/account"
+                    android:id="@+id/gprofile_user"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="199dp"
+                    android:layout_height="50dp" tools:layout_editor_absoluteY="1dp"
+                    tools:layout_editor_absoluteX="207dp" android:gravity="center">
+                <TextView
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content" android:id="@+id/gname_user"
+                        android:textSize="18sp" android:textColor="#FFFFFF" android:textStyle="bold"
+                        android:text="Random Chat" android:layout_marginLeft="10dp"/>
+                <TextView
+                        android:text="online"
+                        android:layout_width="155dp"
+                        android:layout_height="1dp" android:id="@+id/status_user"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:cardCornerRadius="20dp"
+            android:layout_marginStart="8dp" android:layout_marginRight="60dp" android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp" android:id="@+id/cardView3" android:layout_marginLeft="8dp"
+            android:background="#E3E0E0">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#F3EFEF">
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:gravity="center|start|top"
+                    android:ems="10"
+                    android:id="@+id/gchat_message" android:layout_weight="1" android:hint="Tap to message"
+                    android:background="@null" android:layout_marginLeft="33dp" android:layout_gravity="center"
+                    android:paddingTop="14dp" android:paddingLeft="10dp" android:textColor="#090909"
+                    android:textColorHint="#0C0C0C"/>
+            <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="28dp" app:srcCompat="@drawable/attachment"
+                    android:id="@+id/gattachment" android:layout_weight="1"
+                    android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:paddingRight="2dp"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="52dp" app:srcCompat="@drawable/camera" android:id="@+id/gcamera"
+                android:layout_marginLeft="3dp"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            android:id="@+id/grecycler_Views"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:background="@drawable/bas" app:layout_constraintTop_toBottomOf="@+id/gtoolbar">
+    </androidx.recyclerview.widget.RecyclerView>
+    <ImageView
+            android:layout_width="56dp"
+            android:layout_height="35dp" app:srcCompat="@drawable/send" android:id="@+id/gsend"
+            android:paddingRight="4dp" android:paddingLeft="2dp"
+            android:layout_marginLeft="6dp" android:layout_marginStart="6dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView3" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

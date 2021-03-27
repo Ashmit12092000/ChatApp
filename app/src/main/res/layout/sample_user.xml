@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:background="?selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp" android:background="#D6D677" app:cardCornerRadius="15dp"
+            android:paddingLeft="5dp" android:paddingRight="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            app:cardBackgroundColor="#FAFAFA" app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="5dp" app:layout_constraintHorizontal_bias="0.0"
+            android:focusable="true">
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" android:id="@+id/view7" android:background="#34e7e4"
+                android:layout_marginTop="5dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="92dp"
+                android:layout_height="82dp" android:src="@drawable/account" android:id="@+id/profile_image"
+                android:layout_marginTop="15dp" android:layout_marginLeft="5dp"/>
+        <TextView
+                android:layout_width="221dp"
+                android:layout_height="wrap_content" android:id="@+id/username" android:layout_marginLeft="115dp"
+                android:layout_marginTop="20dp" android:textSize="18sp" android:textColor="#000000"
+                android:text="Sample Name" android:textStyle="bold"/>
+        <TextView
+                android:text="Last Message"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content" android:id="@+id/last_message" android:layout_marginTop="65dp"
+                android:layout_marginStart="115dp" android:textSize="16sp" android:textColor="#565956"
+                android:visibility="gone"/>
+        <TextView
+                android:text="Tap to chat"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content" android:id="@+id/last_message2" android:layout_marginTop="65dp"
+                android:layout_marginStart="115dp" android:textSize="16sp" android:textColor="#40C640"
+                android:visibility="gone"/>
+        <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/time" android:layout_marginTop="73dp"
+                android:layout_marginStart="280dp" android:textSize="16sp"/>
+        <View
+                android:layout_width="307dp"
+                android:layout_height="5dp" android:id="@+id/view5" android:layout_marginTop="100dp"
+                android:background="#7AE39D" android:layout_marginLeft="95dp"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

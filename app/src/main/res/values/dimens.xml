@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="local_preview_margin_top">28dp</dimen>
+    <dimen name="local_preview_margin_right">24dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="call_button_size">60dp</dimen>
+    <dimen name="other_button_size">54dp</dimen>
+    <dimen name="local_preview_width">88dp</dimen>
+    <dimen name="local_preview_height">117dp</dimen>
+    <dimen name="local_back_icon_size">50dp</dimen>
+    <dimen name="remote_back_icon_size">100dp</dimen>
+    <dimen name="remote_back_icon_margin_bottom">90dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="control_bottom_margin">24dp</dimen>
+    <dimen name="control_bottom_horizontal_margin">30dp</dimen>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+</resources>
